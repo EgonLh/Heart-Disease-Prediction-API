@@ -17,7 +17,7 @@ This project serves a machine learning model that predicts the likelihood of hea
 - **CI/CD integration** via GitHub Actions (optional).
 
 ---
-
+```
 ├── app.py                 # FastAPI application serving the model
 ├── models/
 │   └── model.pkl          # Trained model artifact
@@ -32,7 +32,7 @@ This project serves a machine learning model that predicts the likelihood of hea
 ├── Dockerfile             # Container setup (planned)
 ├── dvc.yaml               # Pipeline configuration (planned)
 └── README.md
-
+```
 This project is actively maintained with plans to improve:
 Integration of DVC pipelines for reproducible training and version control.
 Containerization with Docker for easier deployment.
