@@ -33,4 +33,10 @@ This project serves a machine learning model that predicts the likelihood of hea
 ├── dvc.yaml               # Pipeline configuration (planned)
 └── README.md
 
+This project is actively maintained with plans to improve:
+Integration of DVC pipelines for reproducible training and version control.
+Containerization with Docker for easier deployment.
+Monitoring and alerting setup using Prometheus and Grafana dashboards.
+Exploration of CI/CD automation using GitHub Actions.
+Model improvements with additional data and calibration to reduce false positives.
 Let me know if you want it more casual, or want to add badges, GIFs, or anything else!
