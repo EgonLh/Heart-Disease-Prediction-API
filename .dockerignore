@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.log
+*.csv
+models/
+logs/
+reports/
+.dvc/
+.dvcignore
