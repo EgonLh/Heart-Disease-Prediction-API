@@ -8,12 +8,10 @@ from datetime import datetime
 from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
 import time
 
-# Load model
 model = joblib.load("models/model.pkl")
 
 app = FastAPI()
 
-# Input Schema
 class HeartData(BaseModel):
     age: float
     sex: float
@@ -29,10 +27,8 @@ class HeartData(BaseModel):
     ca: float
     thal: float
 
-# Create logs dir if not exists
 os.makedirs("logs", exist_ok=True)
 
-# Prometheus metrics
 REQUEST_COUNT = Counter('request_count', 'Total number of requests')
 REQUEST_LATENCY = Histogram('request_latency_seconds', 'Request latency in seconds')
 PREDICTIONS_TOTAL = Counter('predictions_total', 'Total number of predictions made')

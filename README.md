@@ -10,14 +10,7 @@ This project serves a machine learning model that predicts the likelihood of hea
 - **Prediction API** built with FastAPI for serving model predictions.
 - **Input validation** using Pydantic schemas.
 - **Prediction logging** with timestamps, saved as CSV for audit and analysis.
-- **Probability thresholding** (optional) to tune sensitivity and reduce false positives.
-- **Data versioning** and pipeline automation with DVC (in progress).
-- **Monitoring setup** with Prometheus and Grafana (planned).
-- **Containerization** with Docker for consistent deployment (planned).
-- **CI/CD integration** via GitHub Actions (optional).
 
----
-```
 ├── app.py                 # FastAPI application serving the model
 ├── models/
 │   └── model.pkl          # Trained model artifact
